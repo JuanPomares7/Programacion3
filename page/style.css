@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+nav a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#dia-semana {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#portada {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px; /* Adjust height as needed */
+    background-size: cover;
+}
+
+main {
+    padding: 100px;
+}
+
+/* Styles for each section */
+#inicio {
+    background-image: url("../img/fondo_principal.jpg");
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se ajusten a diferentes tamaños de pantalla */
+    gap: 20px; /* Espacio entre los productos */
+}
+
+/* Estilos para cada producto */
+.producto {
+    flex: 1 1 200px; /* Cada producto tiene un ancho mínimo de 200px y un máximo de 1fr */
+    max-width: 200px; /* Ancho máximo de cada producto */
+}
+
+/* Estilos para las imágenes de los productos */
+.producto img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.producto img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Para mantener la proporción y cubrir el espacio asignado */
+}

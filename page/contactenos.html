@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+            <a>sitio web oficial</a> 
+            <img src="/img/logo.png" alt="sitio web oficial" class="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contacto">
+        <h2>Contáctenos</h2>
+        <div class="datos-empresa">
+            <p><strong>Ubicación:</strong> Dirección de la empresa</p>
+            <p><strong>Correo electrónico:</strong> info@empresa.com</p>
+            <p><strong>Teléfono:</strong> 123-456-7890</p>
+        </div>
+        <div class="mapa">
+            <!-- Mapa de Google Maps (cambiar la ubicación por una ficticia) -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.824021417327!2d-79.08490968566646!3d35.918286282253926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDUwJzM2LjciTiA3OcKwMTAnNDcuMyJX!5e0!3m2!1ses-419!2smx!4v1622586592866!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="formulario">
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Juan Pomares. Mi primer sitio web</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
